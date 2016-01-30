@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16CBD44A1C4891930025FB5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD4491C4891930025FB5A /* AppDelegate.swift */; };
+		16CBD44C1C4891930025FB5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD44B1C4891930025FB5A /* ViewController.swift */; };
+		16CBD44F1C4891930025FB5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CBD44D1C4891930025FB5A /* Main.storyboard */; };
+		16CBD4521C4891930025FB5A /* PhotoReal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD4501C4891930025FB5A /* PhotoReal.xcdatamodeld */; };
+		16CBD4541C4891930025FB5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CBD4531C4891930025FB5A /* Assets.xcassets */; };
+		16CBD4571C4891930025FB5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CBD4551C4891930025FB5A /* LaunchScreen.storyboard */; };
+		16CBD4621C4891930025FB5A /* PhotoRealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD4611C4891930025FB5A /* PhotoRealTests.swift */; };
+		16CBD46D1C4891930025FB5A /* PhotoRealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD46C1C4891930025FB5A /* PhotoRealUITests.swift */; };
+		16CBD4801C4892060025FB5A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD47A1C4892060025FB5A /* Bolts.framework */; };
+		16CBD4811C4892060025FB5A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD47B1C4892060025FB5A /* Parse.framework */; };
+		16CBD4821C4892060025FB5A /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD47C1C4892060025FB5A /* ParseFacebookUtils.framework */; };
+		16CBD4831C4892060025FB5A /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD47D1C4892060025FB5A /* ParseFacebookUtilsV4.framework */; };
+		16CBD4841C4892060025FB5A /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD47E1C4892060025FB5A /* ParseTwitterUtils.framework */; };
+		16CBD4851C4892060025FB5A /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD47F1C4892060025FB5A /* ParseUI.framework */; };
+		16CBD4871C48928D0025FB5A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD4861C48928C0025FB5A /* AudioToolbox.framework */; };
+		16CBD4891C4892920025FB5A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD4881C4892920025FB5A /* CFNetwork.framework */; };
+		16CBD48B1C4892970025FB5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD48A1C4892970025FB5A /* CoreGraphics.framework */; };
+		16CBD48D1C48929D0025FB5A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD48C1C48929D0025FB5A /* CoreLocation.framework */; };
+		16CBD48F1C4892A20025FB5A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD48E1C4892A20025FB5A /* QuartzCore.framework */; };
+		16CBD4911C4892A70025FB5A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD4901C4892A70025FB5A /* Security.framework */; };
+		16CBD4931C4892AD0025FB5A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD4921C4892AD0025FB5A /* StoreKit.framework */; };
+		16CBD4951C4892B50025FB5A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD4941C4892B50025FB5A /* SystemConfiguration.framework */; };
+		16CBD4971C4892BC0025FB5A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD4961C4892BC0025FB5A /* libz.tbd */; };
+		16CBD4991C4892C20025FB5A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CBD4981C4892C20025FB5A /* libsqlite3.tbd */; };
+		16CBD49B1C4894110025FB5A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD49A1C4894110025FB5A /* LoginViewController.swift */; };
+		16CBD49D1C489BDA0025FB5A /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD49C1C489BDA0025FB5A /* PostImageViewController.swift */; };
+		16CBD49F1C489FFF0025FB5A /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD49E1C489FFF0025FB5A /* UsersTableViewController.swift */; };
+		16CBD4A11C48A3650025FB5A /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD4A01C48A3650025FB5A /* ImageTableViewCell.swift */; };
+		16CBD4A31C48A3970025FB5A /* ImagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CBD4A21C48A3970025FB5A /* ImagesTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16CBD45E1C4891930025FB5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16CBD43E1C4891930025FB5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16CBD4451C4891930025FB5A;
+			remoteInfo = PhotoReal;
+		};
+		16CBD4691C4891930025FB5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16CBD43E1C4891930025FB5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16CBD4451C4891930025FB5A;
+			remoteInfo = PhotoReal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16CBD4461C4891930025FB5A /* PhotoReal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoReal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CBD4491C4891930025FB5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16CBD44B1C4891930025FB5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16CBD44E1C4891930025FB5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16CBD4511C4891930025FB5A /* PhotoReal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoReal.xcdatamodel; sourceTree = "<group>"; };
+		16CBD4531C4891930025FB5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16CBD4561C4891930025FB5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16CBD4581C4891930025FB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CBD45D1C4891930025FB5A /* PhotoRealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoRealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CBD4611C4891930025FB5A /* PhotoRealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRealTests.swift; sourceTree = "<group>"; };
+		16CBD4631C4891930025FB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CBD4681C4891930025FB5A /* PhotoRealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoRealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16CBD46C1C4891930025FB5A /* PhotoRealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRealUITests.swift; sourceTree = "<group>"; };
+		16CBD46E1C4891930025FB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CBD47A1C4892060025FB5A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = PhotoReal/Parse/Bolts.framework; sourceTree = "<group>"; };
+		16CBD47B1C4892060025FB5A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = PhotoReal/Parse/Parse.framework; sourceTree = "<group>"; };
+		16CBD47C1C4892060025FB5A /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = PhotoReal/Parse/ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		16CBD47D1C4892060025FB5A /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = PhotoReal/Parse/ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		16CBD47E1C4892060025FB5A /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = PhotoReal/Parse/ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		16CBD47F1C4892060025FB5A /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = PhotoReal/Parse/ParseUI.framework; sourceTree = "<group>"; };
+		16CBD4861C48928C0025FB5A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		16CBD4881C4892920025FB5A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		16CBD48A1C4892970025FB5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		16CBD48C1C48929D0025FB5A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		16CBD48E1C4892A20025FB5A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		16CBD4901C4892A70025FB5A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		16CBD4921C4892AD0025FB5A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		16CBD4941C4892B50025FB5A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		16CBD4961C4892BC0025FB5A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		16CBD4981C4892C20025FB5A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		16CBD49A1C4894110025FB5A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		16CBD49C1C489BDA0025FB5A /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
+		16CBD49E1C489FFF0025FB5A /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		16CBD4A01C48A3650025FB5A /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		16CBD4A21C48A3970025FB5A /* ImagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16CBD4431C4891930025FB5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CBD4991C4892C20025FB5A /* libsqlite3.tbd in Frameworks */,
+				16CBD4971C4892BC0025FB5A /* libz.tbd in Frameworks */,
+				16CBD4951C4892B50025FB5A /* SystemConfiguration.framework in Frameworks */,
+				16CBD4931C4892AD0025FB5A /* StoreKit.framework in Frameworks */,
+				16CBD4911C4892A70025FB5A /* Security.framework in Frameworks */,
+				16CBD48F1C4892A20025FB5A /* QuartzCore.framework in Frameworks */,
+				16CBD48D1C48929D0025FB5A /* CoreLocation.framework in Frameworks */,
+				16CBD48B1C4892970025FB5A /* CoreGraphics.framework in Frameworks */,
+				16CBD4891C4892920025FB5A /* CFNetwork.framework in Frameworks */,
+				16CBD4871C48928D0025FB5A /* AudioToolbox.framework in Frameworks */,
+				16CBD4851C4892060025FB5A /* ParseUI.framework in Frameworks */,
+				16CBD4811C4892060025FB5A /* Parse.framework in Frameworks */,
+				16CBD4801C4892060025FB5A /* Bolts.framework in Frameworks */,
+				16CBD4831C4892060025FB5A /* ParseFacebookUtilsV4.framework in Frameworks */,
+				16CBD4821C4892060025FB5A /* ParseFacebookUtils.framework in Frameworks */,
+				16CBD4841C4892060025FB5A /* ParseTwitterUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CBD45A1C4891930025FB5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CBD4651C4891930025FB5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16CBD43D1C4891930025FB5A = {
+			isa = PBXGroup;
+			children = (
+				16CBD4981C4892C20025FB5A /* libsqlite3.tbd */,
+				16CBD4961C4892BC0025FB5A /* libz.tbd */,
+				16CBD4941C4892B50025FB5A /* SystemConfiguration.framework */,
+				16CBD4921C4892AD0025FB5A /* StoreKit.framework */,
+				16CBD4901C4892A70025FB5A /* Security.framework */,
+				16CBD48E1C4892A20025FB5A /* QuartzCore.framework */,
+				16CBD48C1C48929D0025FB5A /* CoreLocation.framework */,
+				16CBD48A1C4892970025FB5A /* CoreGraphics.framework */,
+				16CBD4881C4892920025FB5A /* CFNetwork.framework */,
+				16CBD4861C48928C0025FB5A /* AudioToolbox.framework */,
+				16CBD47A1C4892060025FB5A /* Bolts.framework */,
+				16CBD47B1C4892060025FB5A /* Parse.framework */,
+				16CBD47C1C4892060025FB5A /* ParseFacebookUtils.framework */,
+				16CBD47D1C4892060025FB5A /* ParseFacebookUtilsV4.framework */,
+				16CBD47E1C4892060025FB5A /* ParseTwitterUtils.framework */,
+				16CBD47F1C4892060025FB5A /* ParseUI.framework */,
+				16CBD4481C4891930025FB5A /* PhotoReal */,
+				16CBD4601C4891930025FB5A /* PhotoRealTests */,
+				16CBD46B1C4891930025FB5A /* PhotoRealUITests */,
+				16CBD4471C4891930025FB5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16CBD4471C4891930025FB5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16CBD4461C4891930025FB5A /* PhotoReal.app */,
+				16CBD45D1C4891930025FB5A /* PhotoRealTests.xctest */,
+				16CBD4681C4891930025FB5A /* PhotoRealUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16CBD4481C4891930025FB5A /* PhotoReal */ = {
+			isa = PBXGroup;
+			children = (
+				16CBD4491C4891930025FB5A /* AppDelegate.swift */,
+				16CBD44B1C4891930025FB5A /* ViewController.swift */,
+				16CBD44D1C4891930025FB5A /* Main.storyboard */,
+				16CBD4A21C48A3970025FB5A /* ImagesTableViewController.swift */,
+				16CBD4A01C48A3650025FB5A /* ImageTableViewCell.swift */,
+				16CBD49E1C489FFF0025FB5A /* UsersTableViewController.swift */,
+				16CBD49C1C489BDA0025FB5A /* PostImageViewController.swift */,
+				16CBD49A1C4894110025FB5A /* LoginViewController.swift */,
+				16CBD4531C4891930025FB5A /* Assets.xcassets */,
+				16CBD4551C4891930025FB5A /* LaunchScreen.storyboard */,
+				16CBD4581C4891930025FB5A /* Info.plist */,
+				16CBD4501C4891930025FB5A /* PhotoReal.xcdatamodeld */,
+			);
+			path = PhotoReal;
+			sourceTree = "<group>";
+		};
+		16CBD4601C4891930025FB5A /* PhotoRealTests */ = {
+			isa = PBXGroup;
+			children = (
+				16CBD4611C4891930025FB5A /* PhotoRealTests.swift */,
+				16CBD4631C4891930025FB5A /* Info.plist */,
+			);
+			path = PhotoRealTests;
+			sourceTree = "<group>";
+		};
+		16CBD46B1C4891930025FB5A /* PhotoRealUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16CBD46C1C4891930025FB5A /* PhotoRealUITests.swift */,
+				16CBD46E1C4891930025FB5A /* Info.plist */,
+			);
+			path = PhotoRealUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16CBD4451C4891930025FB5A /* PhotoReal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CBD4711C4891930025FB5A /* Build configuration list for PBXNativeTarget "PhotoReal" */;
+			buildPhases = (
+				16CBD4421C4891930025FB5A /* Sources */,
+				16CBD4431C4891930025FB5A /* Frameworks */,
+				16CBD4441C4891930025FB5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoReal;
+			productName = PhotoReal;
+			productReference = 16CBD4461C4891930025FB5A /* PhotoReal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16CBD45C1C4891930025FB5A /* PhotoRealTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CBD4741C4891930025FB5A /* Build configuration list for PBXNativeTarget "PhotoRealTests" */;
+			buildPhases = (
+				16CBD4591C4891930025FB5A /* Sources */,
+				16CBD45A1C4891930025FB5A /* Frameworks */,
+				16CBD45B1C4891930025FB5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16CBD45F1C4891930025FB5A /* PBXTargetDependency */,
+			);
+			name = PhotoRealTests;
+			productName = PhotoRealTests;
+			productReference = 16CBD45D1C4891930025FB5A /* PhotoRealTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16CBD4671C4891930025FB5A /* PhotoRealUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16CBD4771C4891930025FB5A /* Build configuration list for PBXNativeTarget "PhotoRealUITests" */;
+			buildPhases = (
+				16CBD4641C4891930025FB5A /* Sources */,
+				16CBD4651C4891930025FB5A /* Frameworks */,
+				16CBD4661C4891930025FB5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16CBD46A1C4891930025FB5A /* PBXTargetDependency */,
+			);
+			name = PhotoRealUITests;
+			productName = PhotoRealUITests;
+			productReference = 16CBD4681C4891930025FB5A /* PhotoRealUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16CBD43E1C4891930025FB5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Akkshay Khoslaa";
+				TargetAttributes = {
+					16CBD4451C4891930025FB5A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					16CBD45C1C4891930025FB5A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 16CBD4451C4891930025FB5A;
+					};
+					16CBD4671C4891930025FB5A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 16CBD4451C4891930025FB5A;
+					};
+				};
+			};
+			buildConfigurationList = 16CBD4411C4891930025FB5A /* Build configuration list for PBXProject "PhotoReal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16CBD43D1C4891930025FB5A;
+			productRefGroup = 16CBD4471C4891930025FB5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16CBD4451C4891930025FB5A /* PhotoReal */,
+				16CBD45C1C4891930025FB5A /* PhotoRealTests */,
+				16CBD4671C4891930025FB5A /* PhotoRealUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16CBD4441C4891930025FB5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CBD4571C4891930025FB5A /* LaunchScreen.storyboard in Resources */,
+				16CBD4541C4891930025FB5A /* Assets.xcassets in Resources */,
+				16CBD44F1C4891930025FB5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CBD45B1C4891930025FB5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CBD4661C4891930025FB5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16CBD4421C4891930025FB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CBD4A11C48A3650025FB5A /* ImageTableViewCell.swift in Sources */,
+				16CBD49D1C489BDA0025FB5A /* PostImageViewController.swift in Sources */,
+				16CBD49B1C4894110025FB5A /* LoginViewController.swift in Sources */,
+				16CBD49F1C489FFF0025FB5A /* UsersTableViewController.swift in Sources */,
+				16CBD4521C4891930025FB5A /* PhotoReal.xcdatamodeld in Sources */,
+				16CBD44C1C4891930025FB5A /* ViewController.swift in Sources */,
+				16CBD44A1C4891930025FB5A /* AppDelegate.swift in Sources */,
+				16CBD4A31C48A3970025FB5A /* ImagesTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CBD4591C4891930025FB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CBD4621C4891930025FB5A /* PhotoRealTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16CBD4641C4891930025FB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16CBD46D1C4891930025FB5A /* PhotoRealUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16CBD45F1C4891930025FB5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16CBD4451C4891930025FB5A /* PhotoReal */;
+			targetProxy = 16CBD45E1C4891930025FB5A /* PBXContainerItemProxy */;
+		};
+		16CBD46A1C4891930025FB5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16CBD4451C4891930025FB5A /* PhotoReal */;
+			targetProxy = 16CBD4691C4891930025FB5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16CBD44D1C4891930025FB5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16CBD44E1C4891930025FB5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16CBD4551C4891930025FB5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16CBD4561C4891930025FB5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16CBD46F1C4891930025FB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16CBD4701C4891930025FB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16CBD4721C4891930025FB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoReal/Parse",
+				);
+				INFOPLIST_FILE = PhotoReal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoslaa.PhotoReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16CBD4731C4891930025FB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhotoReal/Parse",
+				);
+				INFOPLIST_FILE = PhotoReal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoslaa.PhotoReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		16CBD4751C4891930025FB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhotoRealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoslaa.PhotoRealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoReal.app/PhotoReal";
+			};
+			name = Debug;
+		};
+		16CBD4761C4891930025FB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PhotoRealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoslaa.PhotoRealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoReal.app/PhotoReal";
+			};
+			name = Release;
+		};
+		16CBD4781C4891930025FB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PhotoRealUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoslaa.PhotoRealUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PhotoReal;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		16CBD4791C4891930025FB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PhotoRealUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.khoslaa.PhotoRealUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PhotoReal;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16CBD4411C4891930025FB5A /* Build configuration list for PBXProject "PhotoReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CBD46F1C4891930025FB5A /* Debug */,
+				16CBD4701C4891930025FB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16CBD4711C4891930025FB5A /* Build configuration list for PBXNativeTarget "PhotoReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CBD4721C4891930025FB5A /* Debug */,
+				16CBD4731C4891930025FB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16CBD4741C4891930025FB5A /* Build configuration list for PBXNativeTarget "PhotoRealTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CBD4751C4891930025FB5A /* Debug */,
+				16CBD4761C4891930025FB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16CBD4771C4891930025FB5A /* Build configuration list for PBXNativeTarget "PhotoRealUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16CBD4781C4891930025FB5A /* Debug */,
+				16CBD4791C4891930025FB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		16CBD4501C4891930025FB5A /* PhotoReal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				16CBD4511C4891930025FB5A /* PhotoReal.xcdatamodel */,
+			);
+			currentVersion = 16CBD4511C4891930025FB5A /* PhotoReal.xcdatamodel */;
+			path = PhotoReal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 16CBD43E1C4891930025FB5A /* Project object */;
+}
